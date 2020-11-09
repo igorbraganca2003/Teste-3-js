@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="resultado"></div>
+
+    <script>
+
+        //entrada
+        alert('Bem vindo ao programa tabuada, cilque em ok para continuar')
+        let tabuada = prompt('Qual tabuada você quer saber ?');
+
+        //processamento
+        let template = `Tabuada do ${tabuada}<br><br>`
+        let contador = 1;
+        while(contador <= 10++){ 
+            template += `${tabuada} x contador = ${tabuada * 1} = ${tabuada * contador} <br>`;
+            contador++
+        }
+            // template += `${tabuada} x 1 = ${tabuada * 1} <br>`
+            // template += `${tabuada} x 2 = ${tabuada * 2} <br>`
+            // template += `${tabuada} x 3 = ${tabuada * 3} <br>`
+            // template += `${tabuada} x 4 = ${tabuada * 4} <br>`
+            // template += `${tabuada} x 5 = ${tabuada * 5} <br>`
+            // template += `${tabuada} x 6 = ${tabuada * 6} <br>`
+            // template += `${tabuada} x 7 = ${tabuada * 7} <br>`
+            // template += `${tabuada} x 8 = ${tabuada * 8} <br>`
+            // template += `${tabuada} x 9 = ${tabuada * 9} <br>`
+            // template += `${tabuada} x 10 = ${tabuada * 10} <br>`
+        
+
+        //saída
+        document.getElementById('resultado').innerHTML = template;
+       
+    </script>
+
+</body>
+</html>
